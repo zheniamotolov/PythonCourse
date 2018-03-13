@@ -35,8 +35,3 @@ def CountWays(n):
 
 
 # driver program
-def main():
-    n = 3
-    print(CountWays(n))
-if __name__ == '__main__':
-    main()
