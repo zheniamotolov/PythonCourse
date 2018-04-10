@@ -10,7 +10,7 @@ d = 103  # answer 76 # 3x + 5y + 10z = 76
 parents_probability = [0] * max
 
 
-def breed(population, parent_1, parent_2):
+def create_new_child(population, parent_1, parent_2):
     crossover = random.randint(1, 2)
     is_first_parent = random.randint(0, 101)
     child = population[parent_1]
@@ -55,7 +55,7 @@ def create_new_population(population):
             iterations += 1
             if iterations > max:
                 break
-        new_population[i] = breed(population, parent_1, parent_2)
+        new_population[i] = create_new_child(population, parent_1, parent_2)
         i += 1
 
 
